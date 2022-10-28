@@ -2,11 +2,29 @@ import React from "react";
 import IndiretaFilho from "./IndiretaFilho";
 
 export default (props) => {
-  // nome idade nerd
+  let nome = "?";
+  let idade = 0;
+  let nerd = false;
 
-  return (
-    <div>
-      Pai <IndiretaFilho></IndiretaFilho>
+  // nome idade nerd
+  function fornecerInformacoes(nomePar, idadePar, nerdPar) {
+    nome = nomePar;
+    idade = idadePar;
+    nerd = nerdPar;
+
+    console.log(nome, idade, nerd);
+  }
+
+    return (
+      <div>
+        <div>
+        <span>{nome} </span>
+        <span>
+          <strong>{idade} </strong>
+        </span>
+        <span>{nerd ? "Verdadeiro" : "Falso"}</span>
+      </div>
+      <IndiretaFilho quandoClicar={fornecerInformacoes}></IndiretaFilho>
     </div>
   );
 };
