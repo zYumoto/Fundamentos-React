@@ -4,7 +4,9 @@ import React from "react";
 import "./index.css";
 // Importando primeiro componente
 import Primeiro from "./components/basicos/Primeiro.jsx";
-// Segundo component
+// Segundo componente
+
+import Usuarioinfo from "./components/condicional/Usuarioinfo";
 import TabelaProdutos from "./components/repeticao/TabelaProdutos";
 import ParOuImpar from "./components/condicional/ParOuImpar";
 import ComParametro from "./components/basicos/ComParametro";
@@ -22,6 +24,7 @@ export default () => (
     <div className="Cards">
       <Card title="#08 - Renderização condicional" color="#4C3575">
         <ParOuImpar numero={21}></ParOuImpar>
+        <Usuarioinfo usuario={{nome: 'Davi'}} />
       </Card>
 
       <Card title="#07 - Exercicio Repeticao" color="#4B5D67">
