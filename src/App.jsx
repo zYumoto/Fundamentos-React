@@ -6,6 +6,7 @@ import "./index.css";
 import Primeiro from "./components/basicos/Primeiro.jsx";
 // Segundo componente
 
+import DiretaPai from "./components/comunicacao/DiretaPai";
 import Usuarioinfo from "./components/condicional/Usuarioinfo";
 import TabelaProdutos from "./components/repeticao/TabelaProdutos";
 import ParOuImpar from "./components/condicional/ParOuImpar";
@@ -22,6 +23,10 @@ export default () => (
     <h1>Fundamentos React</h1>
 
     <div className="Cards">
+    <Card title="#09 - Comunicação direta" color="#371B58">
+        <DiretaPai></DiretaPai>
+      </Card>
+      
       <Card title="#08 - Renderização condicional" color="#4C3575">
         <ParOuImpar numero={21}></ParOuImpar>
         <Usuarioinfo usuario={{nome: 'Davi'}} />

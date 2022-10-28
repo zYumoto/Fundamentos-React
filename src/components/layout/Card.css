@@ -6,8 +6,8 @@
 
     display: flex;
     flex-direction: column;
-    min-width: 500px;
-    max-width: 500px;
+    height: 310px;
+    max-width: 300px;
 }
 
 .Card .Title{
