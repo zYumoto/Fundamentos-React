@@ -10,6 +10,7 @@ import Card from "./components/layout/Card";
 export default () => (
   <div className="App">
 <h1>Fundamentos React</h1>
+
     <div className="Cards">
       <Card title="#04 - Desafio Aleatorio" color="#1F4690">
         <Aleatorio min={1} max={60} />
